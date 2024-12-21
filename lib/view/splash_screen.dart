@@ -21,13 +21,16 @@ class SplashScreenState extends State<SplashScreen>
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), () {
-      Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) => const WorldStates(),
-        ),
-      );
-    });
+    Timer(
+      const Duration(seconds: 3),
+      () {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (context) => const WorldStates(),
+          ),
+        );
+      },
+    );
   }
 
   @override

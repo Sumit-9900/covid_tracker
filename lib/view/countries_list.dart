@@ -3,8 +3,6 @@ import 'package:covid_tracker/view/countries_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
-// 231 countries
-
 class CountriesListScreen extends StatefulWidget {
   const CountriesListScreen({super.key});
 
